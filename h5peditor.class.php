@@ -406,6 +406,7 @@ class H5peditor {
     // the editor works.
 
     // Get list of JS and CSS files that belongs to the dependencies
+    $prefix="";
     $files = $this->h5p->getDependenciesFiles($libraries, $prefix);
     $libraryName = H5PCore::libraryToString(compact('machineName', 'majorVersion', 'minorVersion'), true);
     if ($this->hasPresave($libraryName) === true) {
